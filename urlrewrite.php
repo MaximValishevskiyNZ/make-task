@@ -26,4 +26,11 @@ $arUrlRewrite=array (
     'RULE' => '$1.php?$2',
     'SORT' => 120,
   ),
+  4 => 
+  array (
+    'CONDITION' => '#^\\/novosti\\/(.*)?#',
+    'RULE' => 'ELEMENT_CODE=$1',
+    'PATH' => '/novosti/detail.php',
+    'SORT' => 130,
+  ),
 );
