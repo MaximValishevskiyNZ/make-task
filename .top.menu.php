@@ -7,6 +7,13 @@ $aMenuLinks = Array(
 		Array("TEXT"=>""), 
 		"" 
 	),
+    Array(
+        "Новости",
+        "/novosti/",
+        Array(),
+        Array(),
+        ""
+    ),
 	Array(
 		"Документы", 
 		"/dokumenty/", 
