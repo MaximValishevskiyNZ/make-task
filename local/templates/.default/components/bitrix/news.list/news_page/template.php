@@ -15,7 +15,7 @@
                     </a>
                     <time class="news-important__publication-date"
                           datetime="<?= FormatDate("Y-m-d", MakeTimeStamp($item['TIMESTAMP_X'])) ?>">
-                        <?= FormatDate("d F Y", MakeTimeStamp($item['TIMESTAMP_X'])) ?>
+                        <?= mb_strtolower(FormatDate("d F Y", MakeTimeStamp($item['TIMESTAMP_X']))) ?>
                     </time>
                 </article>
             <? else: ?>
@@ -28,7 +28,7 @@
                         </a>
                         <time class="news__publication-date"
                               datetime="<?= FormatDate("Y-m-d", MakeTimeStamp($item['TIMESTAMP_X'])) ?>">
-                            <?= FormatDate("d F Y", MakeTimeStamp($item['TIMESTAMP_X'])) ?>
+                            <?= mb_strtolower(FormatDate("d F Y", MakeTimeStamp($item['TIMESTAMP_X']))) ?>
                         </time>
                     </div>
                     <div class="news__illustration" style="background-image: url(<?= $item['PREVIEW_PICTURE']['SRC']?>)"></div>
